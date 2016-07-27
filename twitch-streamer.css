@@ -1,0 +1,48 @@
+.banner {
+    width:60%;
+    margin:auto;
+}
+
+.user{
+    height:100px;
+    background: pink;
+    width:60%;
+    margin:auto;
+    border-top: 1px solid black;
+    padding: 10px;
+
+}
+
+.user img{
+    float:left;
+    width: 10%;
+    margin-left:10px;
+    margin-right: 10px;
+    margin-top:10px;
+    border-radius: 50%;
+
+}
+
+.user h4{
+    float: left;
+    width: 10%;
+    margin-left:40px;
+    margin-right: 10px;
+    padding-top:20px;
+}
+
+.user p {
+    float:right;
+    width: 70%;
+    margin-right: 10px;
+    text-align: center;
+    padding-top:30px;
+}
+
+.online {
+    background: green;
+}
+
+a {
+    color: black;
+}

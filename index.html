@@ -2,14 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="A web application shows streamers on Twitch">
+    <meta name="description" content="A web application shows streamer profiles from Twitch">
     <meta name="keyword" content="free code camp, Twitch">
     <meta name="author" content="Qian Yang">
     <title>Twitch Streamer</title>
+    <link href="twitch-streamer.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+
+    <div class="banner">
+        <h1>Twitch Streamer</h1>
+        <div>
+            <input id="all" type="radio" onclick="allUsers()" checked>All Users
+            <input id="on" type="radio" onclick="onlineUsers()">Online
+            <input id="off" type="radio" onclick="offlineUsers()">Offline
+        </div>
+
+    </div>
+
+<div id="userInfo">
+    </div>
 
 
 
 </body>
+<script src="twitch-streamer.js"></script>
 </html>
