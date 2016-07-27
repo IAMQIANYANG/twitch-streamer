@@ -1,3 +1,18 @@
+body{
+    background: #FFFFF7;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.banner div {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+
+}
 .banner {
     width:60%;
     margin:auto;
@@ -5,10 +20,9 @@
 
 .user{
     height:100px;
-    background: pink;
     width:60%;
     margin:auto;
-    border-top: 1px solid black;
+    border-top: 2px solid #ffffff;
     padding: 10px;
 
 }
@@ -29,6 +43,7 @@
     margin-left:40px;
     margin-right: 10px;
     padding-top:20px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .user p {
@@ -37,12 +52,21 @@
     margin-right: 10px;
     text-align: center;
     padding-top:30px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .online {
-    background: green;
+    background: #008891;
 }
 
+.offline{
+    background: #7AB2B9;
+}
+
+.noUser{
+    background: #D4D4D4;
+}
 a {
     color: black;
+    width:60%;
 }

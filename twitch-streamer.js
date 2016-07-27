@@ -74,19 +74,6 @@ var getUserInfoOffline = function(obj) {
 };
 
 
-// var isOffline = function(){
-//   callAPI("streams");
-//   console.log("fisrt call finished");
-//   userInfo.forEach(function(obj){
-//     if(obj.status === null) {
-//         console.log(obj.name);
-//         console.log("second finished");
-//     }
-//
-//   })
-//
-// };
-
 var displayInfo = function (image, name, status) {
 
   var displayArea = document.querySelector("#userInfo");
@@ -95,13 +82,15 @@ var displayInfo = function (image, name, status) {
   var displayStatus = '<p>' + status + '</p>';
   var link = "https://www.twitch.tv/" + name;
   if (status === "offline") {
-    displayArea.innerHTML += '<a href="' + link + '">'
-      + '<div class="user offline">' + displayImage + displayName + displayStatus + '</div></a>'
+    displayArea.innerHTML += '<div class="user offline">'
+      + '<a href="' + link + '" target="_blank">'
+      + displayImage + displayName + displayStatus + '</div></a>'
   } else if (status === "noUser") {
     displayArea.innerHTML += '<div class="user noUser">' + displayImage + displayName + '<p>User has deleted the account or user never existed.</p>' + '</div>'
   } else {
-    displayArea.innerHTML += '<a href="' + link + '">'
-      + '<div class="user online">' + displayImage + displayName + displayStatus + '</div></a>'
+    displayArea.innerHTML += '<div class="user online">'
+      + '<a href="' + link + '"  target="_blank">'
+      + displayImage + displayName + displayStatus + '</div></a>'
   }
   
 };
