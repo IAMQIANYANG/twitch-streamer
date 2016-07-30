@@ -70,3 +70,13 @@ a {
     color: black;
     width:60%;
 }
+
+.footer {
+    margin-top: 10px;
+    text-align: center;
+    color:#000000;
+}
+
+.footer a{
+    color:#000000;
+}
