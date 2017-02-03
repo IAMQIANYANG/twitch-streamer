@@ -13,7 +13,7 @@ var getUserInfo = function(){
     currentObj.url = url;
     var request = new XMLHttpRequest();
     request.open('GET', url, true);
-
+    request.setRequestHeader("Client-ID", "grefra90kvs1qb0472u6a23zd22w7d");
     request.onload = function(){
       if(request.status >= 200 && request.status < 400) {
         var currentResult = JSON.parse(request.responseText);
@@ -55,7 +55,7 @@ var getUserInfoOffline = function(obj) {
 
     var request = new XMLHttpRequest();
     request.open('GET', url, true);
-
+    request.setRequestHeader("Client-ID", "grefra90kvs1qb0472u6a23zd22w7d");
     request.onload = function () {
       if (request.status >= 200 && request.status < 400) {
         var currentResult = JSON.parse(request.responseText);
